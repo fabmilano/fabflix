@@ -33,7 +33,7 @@
 
 
 // connect
-$m = new Mongo("mongodb://172.17.0.18");
+$m = new Mongo("videocat");
 
 // select a database
 $db = $m->videos;
