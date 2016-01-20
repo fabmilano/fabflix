@@ -22,8 +22,18 @@
 
 <?php
 
+    ?><h3><?php echo $title;?></h3>
+    <div id="instructions"><?php
+    echo '<video class="video-js vjs-default-skin" width="640px" height="267px" controls preload="none" data-setup=\'{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }\'>';
+    echo "<source src=\"rtmp://fabflix.cloudapp.net:1935/vod2/big_buck_bunny.mp4\"   type=\"rtmp/mp4\" />";
+    ?></video><?php
+    ?></div><?php
+
+
+
+
 // connect
-$m = new Mongo("mongodb://172.17.0.18");
+$m = new Mongo("videocat");
 
 // select a database
 $db = $m->videos;
