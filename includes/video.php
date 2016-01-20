@@ -23,7 +23,7 @@
 <?php
 
 // connect
-$m = new Mongo("db");
+$m = new Mongo("videocat");
 
 // select a database
 $db = $m->videos;
