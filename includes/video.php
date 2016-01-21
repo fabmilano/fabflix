@@ -50,10 +50,10 @@ foreach ($cursor as $document) {
     echo $image;
     
     ?><h3><?php echo $title;?></h3>
-    <div id="instructions">
-    <video class="video-js vjs-default-skin" width="640px" height="267px" controls poster=$image preload="none" data-setup=\'{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }\'>
-    <source src=$link   type=\"rtmp/mp4\" />
-    </video><?php
+    <div id="instructions"><?php
+    echo '<video class="video-js vjs-default-skin" width="640px" height="267px" controls poster=\"$image\" preload="none" data-setup=\'{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }\'>';
+    echo "<source src=\"$link\"   type=\"rtmp/mp4\" />";
+    ?></video><?php
     ?></div><?php
 
    echo nl2br( "Category: " .  $document["category"]  .  "\n" );
