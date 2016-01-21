@@ -47,7 +47,6 @@ foreach ($cursor as $document) {
     $link = "rtmp://mymongotest.cloudapp.net:1935/vod2/" .  $document["rtmp"];
     $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
 
-    echo $image;
     
     ?><h3><?php echo $title;?></h3>
     <div id="instructions">
