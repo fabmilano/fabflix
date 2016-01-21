@@ -45,7 +45,7 @@ $cursor = $collection->find();
 foreach ($cursor as $document) {
     $title =  $document["title"];
     $link = "rtmp://mymongotest.cloudapp.net:1935/vod2/" .  $document["rtmp"];
-    $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"]
+    $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
     
     ?><h3><?php echo $title;?></h3>
     <div id="instructions"><?php
