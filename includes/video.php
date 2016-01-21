@@ -49,7 +49,7 @@ foreach ($cursor as $document) {
     
     ?><h3><?php echo $title;?></h3>
     <div id="instructions"><?php
-    echo '<video poster=$image class="video-js vjs-default-skin" width="640px" height="267px" controls preload="none" data-setup=\'{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }\'>';
+    echo '<video class="video-js vjs-default-skin" width="640px" height="267px" controls poster=$image preload="none" data-setup=\'{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }\'>';
     echo "<source src=\"$link\"   type=\"rtmp/mp4\" />";
     ?></video><?php
     ?></div><?php
