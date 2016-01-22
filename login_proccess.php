@@ -1,7 +1,6 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+
 
 
 include 'connect_to_database.php'; //connect the connection page
@@ -13,7 +12,7 @@ if(!isset($_POST['submit'])) { // if the form not yet submitted
    exit;
 }
 //check if the username entered is in the database.
-$test_query = "SELECT * FROM users_tbl WHERE username = '".$_POST[username]."'";
+$test_query = "SELECT * FROM users_tbl WHERE username = '".$_POST['username']."'";
 $query_result = mysql_query($test_query);
 //conditions
 if(mysql_num_rows($query_result)==0) {
