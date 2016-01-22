@@ -13,6 +13,9 @@
                 $msg = urldecode($_GET['msg']);
                 echo "<p class=\"info-msg\">$msg</p>";
         }
+        else{
+                header('Location: index.php'));
+        }
         ?>
         <hr>
         <hr>
