@@ -8,7 +8,7 @@ if(!isset($_POST['submit'])) { // if the form not yet submitted
    exit;
 }
 //check if the username entered is in the database.
-$test_query = "SELECT * FROM table_name WHERE username_field = '".$_POST[username]."'";
+$test_query = "SELECT * FROM users_tbl WHERE username = '".$_POST[username]."'";
 $query_result = mysql_query($test_query);
 //conditions
 if(mysql_num_rows($query_result)==0) {
@@ -18,9 +18,9 @@ if(mysql_num_rows($query_result)==0) {
 //if exists, then extract the password.
     while($row_query = mysql_fetch_array($query_result)) {
         // check if password are equal
-        if($row_query['password_field']==$_POST['password']){
+        if($row_query['password']==$_POST['password']){
             $_SESSION['password'] = $_POST['password'];
-            header("Location: home.php");
+            header("Location: index.php");
             exit;
         } else{ // if not
             echo "Invalid Password";
