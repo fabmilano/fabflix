@@ -12,7 +12,7 @@
         if(isset($_GET['msg'])) {
                 $msg = urldecode($_GET['msg']);
                 echo "<p class=\"info-msg\">$msg</p>";
-
+                
 
         }
         else{
@@ -22,7 +22,7 @@
         <hr>
         <hr>
 
-        <?php header("Location: index.php"); ?>
+
         <a href="?page=home">Home</a> |
         <a href="?page=video">Videos</a> |
 
