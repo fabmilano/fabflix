@@ -1,5 +1,5 @@
 
-<!-- 
+
 <?php
 
 
@@ -14,7 +14,7 @@ if(!isset($_SESSION['username'])) { //if not yet logged in
    exit;
 }
 ?>
- -->
+
 
 
 
@@ -30,8 +30,8 @@ if(!isset($_SESSION['username'])) { //if not yet logged in
 
         <h1>FabFlix</h1>
 
-<!--         Welcome <?php echo $_SESSION['username']; ?>,
-        <a href="logout.php">logout</a>  -->
+        Welcome <?php echo $_SESSION['username']; ?>,
+        <a href="logout.php">logout</a> 
 
 
 
@@ -40,13 +40,7 @@ if(!isset($_SESSION['username'])) { //if not yet logged in
 
 
 
-<!--         <?php 
-        if(isset($_GET['msg'])) {
-                $msg = urldecode($_GET['msg']);
-                echo "<p class=\"info-msg\">$msg</p>";
-                
-        }
-        ?> -->
+
         <hr>
         <hr>
 
