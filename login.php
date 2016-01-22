@@ -31,6 +31,7 @@ if (isset($_POST['username'])) {
 	if (mysql_num_rows($res) == 1) {
 		echo "You have successfully logged in.";
 		exit();
+		header('Location: index.php');
 	} 
 	// If login information is invalid
 	else {
@@ -38,7 +39,7 @@ if (isset($_POST['username'])) {
 		exit();
 	}
 }
-mysql_close($link);
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -56,4 +57,6 @@ Password: <input type="password" name="password" /><br /><br />
 <input type="submit" name="submit" value="Log In" />
 </form>
 </body>
+
+
 </html>
