@@ -1,7 +1,7 @@
 <?php
 
-// error_reporting(E_ALL);
-// ini_set('display_errors', '1');
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 
 // Your MySQL database login information
 $host = "172.17.0.22:3306"; // Your host address to your database on your server. Usually "localhost". Check with your hosting provider

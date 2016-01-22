@@ -1,6 +1,10 @@
 
 
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 include 'connect_to_database.php'; //connect the connection page
 
 if(empty($_SESSION)) // if the session not yet started
