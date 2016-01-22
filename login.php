@@ -30,8 +30,8 @@ if (isset($_POST['username'])) {
 	// If login information is correct
 	if (mysql_num_rows($res) == 1) {
 		
-		
-		header('Location: index.php?msg=' . urlencode('You have successfully logged in.'));
+		header('Location: index.php');
+		// header('Location: index.php?msg=' . urlencode('You have successfully logged in.'));
 	} 
 	// If login information is invalid
 	else {
