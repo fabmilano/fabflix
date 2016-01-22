@@ -14,10 +14,7 @@
                 echo "<p class=\"info-msg\">$msg</p>";
                 header("Location: index.php");
 
-        }
-        else{
-                header("Location: login.php");
-        }
+        
         ?>
         <hr>
         <hr>
@@ -51,6 +48,13 @@
 
 
 
+        ?>
+
+        <?php
+                }
+        else{
+                header("Location: login.php");
+        }
         ?>
 
 
