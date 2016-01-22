@@ -11,7 +11,7 @@ $host = "172.17.0.22:3306"; // Your host address to your database on your server
 $user = "root"; // Your username you set up for this database on your server
 $pass = "admin"; // Your password you set up for this database on your server
 $db = "users"; // The database name that you will be connecting to
-phpinfo();
+
 // Connecting to the MySQL database
 $link = mysql_connect($host, $user, $pass);
 
