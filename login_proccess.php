@@ -25,7 +25,7 @@ if(mysql_num_rows($query_result)==0) {
         if($row_query['password']==$_POST['password']){
             $_SESSION['password'] = $_POST['password'];
             header("Location: index.php");
-            exit;
+            ;
         } else{ // if not
             echo "Invalid Password";
         }
