@@ -12,12 +12,8 @@
         if(isset($_GET['msg'])) {
                 $msg = urldecode($_GET['msg']);
                 echo "<p class=\"info-msg\">$msg</p>";
-                
 
-        }
-        else{
-                header("Location: login.php");
-        }
+
         ?>
         <hr>
         <hr>
@@ -52,6 +48,9 @@
 
 
         ?>
+
+
+        <?php } ?>
 
 
 
