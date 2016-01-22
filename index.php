@@ -12,14 +12,17 @@
         if(isset($_GET['msg'])) {
                 $msg = urldecode($_GET['msg']);
                 echo "<p class=\"info-msg\">$msg</p>";
-
+        }
+        // else{
+        //         header("Location: login.php");
+        // }
         ?>
         <hr>
         <hr>
 
 
-        <a href="?msg=You+have+successfully+logged+in.?page=home">Home</a> |
-        <a href="?msg=You+have+successfully+logged+in.?page=video">Videos</a> |
+        <a href="?page=home">Home</a> |
+        <a href="?page=video">Videos</a> |
 
 
         <hr>
@@ -46,14 +49,6 @@
 
 
 
-        ?>
-
-
-        <?php
-        }
-        else{
-                header("Location: login.php");
-        }
         ?>
 
 
