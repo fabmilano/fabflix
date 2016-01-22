@@ -1,4 +1,9 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+
 // All code was wrote by Tim Kipp @ TimKippTutorials.com - December 29, 2010
 echo "hello"
 // Your MySQL database login information
