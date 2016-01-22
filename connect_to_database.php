@@ -10,7 +10,7 @@ $pass = "admin"; // Your password you set up for this database on your server
 $db = "users"; // The database name that you will be connecting to
 
 // Connecting to the MySQL database
-$link = mysql_connect($host, $user, $pass);
+mysql_connect($host, $user, $pass);
 
 
 // if (!$link) {
