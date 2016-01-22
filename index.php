@@ -14,7 +14,7 @@
                 echo "<p class=\"info-msg\">$msg</p>";
         }
         else{
-                header('Location: index.php'));
+                header('Location: login.php'));
         }
         ?>
         <hr>
