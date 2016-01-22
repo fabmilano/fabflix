@@ -2,7 +2,7 @@
 // All code was wrote by Tim Kipp @ TimKippTutorials.com - December 29, 2010
 
 // Your MySQL database login information
-$host = "172.17.0.13:3306"; // Your host address to your database on your server. Usually "localhost". Check with your hosting provider
+$host = "172.17.0.17:3306"; // Your host address to your database on your server. Usually "localhost". Check with your hosting provider
 $user = "root"; // Your username you set up for this database on your server
 $pass = "admin"; // Your password you set up for this database on your server
 $db = "users"; // The database name that you will be connecting to
