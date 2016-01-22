@@ -16,10 +16,10 @@ $db = "users"; // The database name that you will be connecting to
 $link = mysql_connect($host, $user, $pass);
 
 
-if (!$link) {
-    die('Could not connect: ' . mysql_error());
-}
-echo 'Connected successfully';
+// if (!$link) {
+//     die('Could not connect: ' . mysql_error());
+// }
+// echo 'Connected successfully';
 
 mysql_select_db($db);
 
