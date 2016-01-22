@@ -24,7 +24,7 @@ if(mysql_num_rows($query_result)==0) {
     while($row_query = mysql_fetch_array($query_result)) {
         // check if password are equal
         if($row_query['password']==$_POST['password']){
-            $_SESSION['password'] = $_POST['password'];
+            
             header("Location: index.php");
             exit;
         } else{ // if not
