@@ -22,7 +22,7 @@ if(isset($_SESSION['username'])) { // if already login
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Welcome, please Log In</title>
 </head>
-
+<center>
 <h1>FabFlix Login</h1>
 <form action = "login_proccess.php" method = "post">
 E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="username" /><br />
@@ -31,4 +31,5 @@ Password:&nbsp; <input type="password" name="password" /><br />
 </form>
 <input type = "submit" name="submit" value="signup" />
 </body>
+</center>
 </html>
