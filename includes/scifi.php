@@ -32,7 +32,7 @@ $cursor = $collection->find(array('genre' => 'sci-fi'));
 
 
 // Sort on date ascending and age descending
-$cursor->sort(array('title' => 1));
+$cursor->sort(array('year' => 1, 'title' => 1));
 
 
 // iterate through the results
@@ -50,7 +50,7 @@ foreach ($cursor as $document) {
       </video>
     </div><?php
 
-   echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
+   
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo "Year: " . $document["year"];
    echo '<hr>';
