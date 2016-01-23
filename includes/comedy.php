@@ -12,7 +12,7 @@ $collection = $db->videos;
 
 
 // find everything in the collection
-$cursor = $collection->find({ genre: 'comedy' });
+$cursor = $collection->find(array('genre' => 'comedy'));
 
 
 // Sort on date ascending and age descending
