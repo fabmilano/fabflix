@@ -28,7 +28,7 @@ $collection = $db->videos;
 
 
 // find everything in the collection
-$cursor = $collection->find(array('genre' => 'scifi'));
+$cursor = $collection->find(array('genre' => 'sci-fi'));
 
 
 // Sort on date ascending and age descending
