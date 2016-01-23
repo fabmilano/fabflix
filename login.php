@@ -25,12 +25,12 @@ if(isset($_SESSION['username'])) { // if already login
 <center>
 <h1>FabFlix Login</h1>
 <form action = "login_proccess.php" method = "post">
-E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="username" /><br />
+E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="username" />
 <p>&nbsp;</p> 
-Password:&nbsp; <input type="password" name="password" /><br />
+Password:&nbsp; <input type="password" name="password" />
 <input type = "submit" name="submit" value="login" />
 </form>
-<p>&nbsp;</p> 
+
 <p>&nbsp;</p> 
 <input type = "submit" name="submit" value="signup" />
 </body>
