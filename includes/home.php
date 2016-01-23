@@ -41,6 +41,10 @@ $collection = $db->videos;
 // find everything in the collection
 $cursor = $collection->find();
 
+
+// Sort on date ascending and age descending
+$cursor->sort(array('year' => 1, 'title' => 1));
+
 // iterate through the results
 foreach ($cursor as $document) {
     $title =  $document["title"];
