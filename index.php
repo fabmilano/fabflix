@@ -36,7 +36,7 @@ if(!isset($_SESSION['username'])) { //if not yet logged in
 
 
         <a href="?page=home"> <h2>Home</h2> </a> ||
-        <a href="?page=comedy">Comedy</a> |
+        <a href="?page=comedy"> <h2>Comedy</h2> </a> |
         <a href="?page=drama">Drama</a> |
         <a href="?page=horror">Horror</a> |
         <a href="?page=scifi">Sci-Fi</a>
