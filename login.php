@@ -18,6 +18,7 @@ if(isset($_SESSION['username'])) { // if already login
 <html>
 <head></head>
 <body>
+<h1>FabFlix Login</h1>
 <form action = "login_proccess.php" method = "post">
 Username: <input type="text" name="username" /><br />
 Password: <input type="password" name="password" /><br />
