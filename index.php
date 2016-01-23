@@ -25,7 +25,9 @@ if(!isset($_SESSION['username'])) { //if not yet logged in
 
         <h1>FabFlix</h1>
 
-        Welcome <?php echo $_SESSION['username']; ?>,
+        <?php $name = strtok($_SESSION['username'], '@'); ?>
+
+        Welcome <?php echo $name; ?>,
         <a href="logout.php">logout</a> 
 
 
