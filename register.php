@@ -1,12 +1,12 @@
 <?php
-	require('connect.php');
+	require('connect_to_database.php');
     // If the values are posted, insert them into the database.
     if (isset($_POST['username']) && isset($_POST['password'])){
         $username = $_POST['username'];
-		$email = $_POST['email'];
+		
         $password = $_POST['password'];
  
-        $query = "INSERT INTO `user` (username, password, email) VALUES ('$username', '$password', '$email')";
+        $query = "INSERT INTO `user` (username, password) VALUES ('$username', '$password')";
         $result = mysql_query($query);
         if($result){
             $msg = "User Created Successfully.";
@@ -18,11 +18,10 @@
 <div class="register-form">
 <h1>Register</h1>
 <form action="" method="POST">
-    <p><label>User Name : </label>
-	<input id="username" type="text" name="username" placeholder="username" /></p>
+
 	
 	<p><label>E-Mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </label>
-	 <input id="password" type="email" name="email"/></p>
+	 <input id="username" type="email" name="email"/></p>
  
      <p><label>Password&nbsp;&nbsp; : </label>
 	 <input id="password" type="password" name="password" placeholder="password" /></p>
