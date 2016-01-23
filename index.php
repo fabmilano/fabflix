@@ -32,13 +32,6 @@ if(!isset($_SESSION['username'])) { //if not yet logged in
 
 
 
-
-
-
-
-
-
-        <hr>
         <hr>
 
 
