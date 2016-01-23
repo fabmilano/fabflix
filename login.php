@@ -29,6 +29,8 @@ E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="username" /><br /
 Password:&nbsp; <input type="password" name="password" /><br />
 <input type = "submit" name="submit" value="login" />
 </form>
+<br>
+<br>
 <input type = "submit" name="submit" value="signup" />
 </body>
 </center>
