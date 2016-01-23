@@ -1,4 +1,19 @@
+<html>
 
+<head>
+
+
+    <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.11/video.js"></script>
+
+    <script src="Base64.js"></script>
+    <script src="jquery-2.1.4.js"></script>
+    <script src="getvideo.js"></script>
+
+
+</head>
+
+<body>
 <?php
 // connect
 $m = new Mongo("db");
@@ -47,3 +62,8 @@ foreach ($cursor as $document) {
 
 
 ?>
+
+</body>
+
+
+</html>
