@@ -6,7 +6,7 @@
 		
         $password = $_POST['password'];
  
-        $query = "INSERT INTO `user` (username, password) VALUES ('$username', '$password')";
+        $query = "INSERT INTO users_tbl (username, password) VALUES ('$username', '$password')";
         $result = mysql_query($query);
         if($result){
             $msg = "User Created Successfully.";
