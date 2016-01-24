@@ -21,13 +21,16 @@
  // $password = mysql_real_escape_string($password);
 
 
- $sql = "SELECT FROM users_tbl WHERE email='$email' LIMIT 1";
+ $sql = "SELECT FROM users_tbl WHERE email='$email'";
  $res = mysql_query($sql);
- if($res==1){
+ if($res==0){
+ 	echo "Email address already in use";
+ 	
+ 	
+ }else{
  	$query = "INSERT into users_tbl (username, password, email) VALUES ('$username', '$password', '$email')";
  	echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
- }else{
- 	echo "Email address already in use";
+
  }
 
 
