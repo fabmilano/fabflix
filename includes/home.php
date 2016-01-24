@@ -15,7 +15,7 @@
 
 <body>
 
-git test
+CI test
 <?php
 
 
