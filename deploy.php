@@ -26,17 +26,17 @@ $deployer = new Deployer([
     // 'branch' => 'master',
 
     // // User to run the script as
-    // 'deployUser' => 'anthony',
+    // 'deployUser' => 'fabmilano',
 
     // Directory of the repository
     'directory' => '/var/www/html/fabflix',
 
-    // // Path to the pull script
-    // // (You can provide your own script instead)
-    // 'pullScriptPath' => __DIR__ . '/scripts/git-pull.sh',
+    // Path to the pull script
+    // (You can provide your own script instead)
+    'pullScriptPath' => __DIR__ . '/scripts/git-pull.sh',
 
-    // // Git remote to fetch from
-    // 'remote' => 'origin'
+    // Git remote to fetch from
+    'remote' => 'origin'
 ]);
 
 $deployer->postDeployCallback = function () {
