@@ -11,19 +11,20 @@ if(!isset($_POST['submit'])) { // if the form not yet submitted
    header("Location: login.php");
    exit;
 }
-//check if the username entered is in the database.
-$test_query = "SELECT * FROM users_tbl WHERE username = '".$_POST['username']."'";
+//check if the email entered is in the database.
+$test_query = "SELECT * FROM users_tbl WHERE email = '".$_POST['email']."'";
 $query_result = mysql_query($test_query);
 //conditions
 if(mysql_num_rows($query_result)==0) {
-//if username entered not yet exists
-    echo "The username you entered is invalid.";
+//if email entered not yet exists
+    echo "The email you entered is invalid.";
 }else {
 //if exists, then extract the password.
     while($row_query = mysql_fetch_array($query_result)) {
         // check if password are equal
         if($row_query['password']==$_POST['password']){
-            $_SESSION['username'] = $_POST['username'];
+            // $_SESSION['email'] = $_POST['email'];
+            $_SESSION['username'] = $row_query['username'];
             header("Location: index.php");
             exit;
         } else{ // if not
