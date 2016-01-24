@@ -11,7 +11,7 @@ if(empty($_SESSION)) // if the session not yet started
 
 if(isset($_SESSION['email'])) { // if already login
    header("Location: index.php"); // send to home page
-   exit; 
+   // exit; 
 }
 
 ?>
