@@ -26,7 +26,7 @@
  if(mysql_num_rows($res)==0) {
  	
 
- 	$query = "INSERT INTO users.users_tbl (username, password, email) VALUES ('$username', '$password', '$email')";
+ 	mysql_query("INSERT INTO users.users_tbl (username, password, email) VALUES ('$username', '$password', '$email')");
  	echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
 
  	
