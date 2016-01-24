@@ -21,7 +21,7 @@
  // $password = mysql_real_escape_string($password);
 
 
- $sql = "SELECT FROM users_tbl WHERE email='$email'";
+ $sql = "SELECT * FROM users_tbl WHERE email='$email'";
  $res = mysql_query($sql);
  if($res==0){
  	echo "Email address already in use";
