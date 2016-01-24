@@ -21,7 +21,7 @@
  // $password = mysql_real_escape_string($password);
 
 
- $sql = "SELECT FROM users_tbl WHERE email='".$email"' LIMIT 1";
+ $sql = "SELECT FROM users_tbl WHERE email='$email' LIMIT 1";
  $res = mysql_query($query);
  if($res){
  	$query = "INSERT into users_tbl (username, password, email) VALUES ('$username', '$password', '$email')";
