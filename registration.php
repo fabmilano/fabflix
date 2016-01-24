@@ -23,7 +23,7 @@
 
  $sql = "SELECT * FROM users_tbl WHERE email='$email'";
  $res = mysql_query($sql);
- if($res==0){
+ if(mysql_num_rows($res)==0) {
  	
 
  	$query = "INSERT into users_tbl (username, password, email) VALUES ('$username', '$password', '$email')";
