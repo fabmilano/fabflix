@@ -13,14 +13,14 @@
  $username = $_POST['username'];
  $email = $_POST['email'];
  $password = $_POST['password'];
- $username = stripslashes($username);
- $username = mysql_real_escape_string($username);
- $email = stripslashes($email);
- $email = mysql_real_escape_string($email);
- $password = stripslashes($password);
- $password = mysql_real_escape_string($password);
+ // $username = stripslashes($username);
+ // $username = mysql_real_escape_string($username);
+ // $email = stripslashes($email);
+ // $email = mysql_real_escape_string($email);
+ // $password = stripslashes($password);
+ // $password = mysql_real_escape_string($password);
 
- $query = "INSERT into users_tbl (username, password, email) VALUES ('$username', '".md5($password)."', '$email')";
+ $query = "INSERT into users_tbl (username, password, email) VALUES ('$username', '$password', '$email')";
  $result = mysql_query($query);
  if($result){
  echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
