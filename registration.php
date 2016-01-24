@@ -19,8 +19,8 @@
  $email = mysql_real_escape_string($email);
  $password = stripslashes($password);
  $password = mysql_real_escape_string($password);
- $trn_date = date("Y-m-d H:i:s");
- $query = "INSERT into `users` (username, password, email, trn_date) VALUES ('$username', '".md5($password)."', '$email', '$trn_date')";
+
+ $query = "INSERT into users_tbl (username, password, email) VALUES ('$username', '".md5($password)."', '$email')";
  $result = mysql_query($query);
  if($result){
  echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
