@@ -22,7 +22,7 @@
 
 
  $sql = "SELECT FROM users_tbl WHERE email='$email' LIMIT 1";
- $res = mysql_query($query);
+ $res = mysql_query($sql);
  if($res){
  	$query = "INSERT into users_tbl (username, password, email) VALUES ('$username', '$password', '$email')";
  	echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
