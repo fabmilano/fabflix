@@ -21,12 +21,12 @@
  // $password = mysql_real_escape_string($password);
 
 
- $sql = "SELECT * FROM users_tbl WHERE email='$email'";
+ $sql = "SELECT * FROM users.users_tbl WHERE email='$email'";
  $res = mysql_query($sql);
  if(mysql_num_rows($res)==0) {
  	
 
- 	$query = "INSERT into users_tbl (username, password, email) VALUES ('$username', '$password', '$email')";
+ 	$query = "INSERT INTO users.users_tbl (username, password, email) VALUES ('$username', '$password', '$email')";
  	echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
 
  	
