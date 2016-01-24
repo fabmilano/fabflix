@@ -16,9 +16,6 @@
 <body>
 
 
-CI TEST
-
-
 
 <?php
 
