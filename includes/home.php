@@ -15,8 +15,6 @@
 
 <body>
 
-TEST CI
-
 <?php
 
 
