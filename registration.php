@@ -24,12 +24,15 @@
  $sql = "SELECT * FROM users_tbl WHERE email='$email'";
  $res = mysql_query($sql);
  if($res==0){
- 	echo "Email address already in use";
+ 	
+
+ 	$query = "INSERT into users_tbl (username, password, email) VALUES ('$username', '$password', '$email')";
+ 	echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
+
  	
  	
  }else{
- 	$query = "INSERT into users_tbl (username, password, email) VALUES ('$username', '$password', '$email')";
- 	echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
+ 	echo "Email address already in use";
 
  }
 
