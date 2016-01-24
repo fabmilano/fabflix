@@ -22,11 +22,11 @@ $deployer = new Deployer([
         '192.168.0.2/24'
     ],
 
-    // // Git branch to reset to
-    // 'branch' => 'master',
+    // Git branch to reset to
+    'branch' => 'master',
 
-    // // User to run the script as
-    // 'deployUser' => 'fabmilano',
+    // User to run the script as
+    'deployUser' => 'fabmilano',
 
     // Directory of the repository
     'directory' => '/var/www/html/fabflix',
