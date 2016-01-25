@@ -40,9 +40,9 @@
  // }
  }else{
 ?>
-<div class="form">
-<h1>Registration</h1>
 <center>
+	<div class="form">
+	<h1>Registration</h1>
 	<form name="registration" action="" method="post">
 	<input type="text" name="username" placeholder="Username" required /><br /><br />
 	<input type="email" name="email" placeholder="E-mail" required /><br /><br />
