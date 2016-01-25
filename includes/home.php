@@ -53,7 +53,18 @@ foreach ($cursor as $document) {
       controls poster="<?php echo $image ?>" preload="none" data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
       <source src="<?php echo $link ?>"   type="rtmp/mp4" />
       </video>
-    </div><?php
+    </div>
+
+    <form action = "rating.php" method = "post">
+      Your rate: <input type="number" name="rating" min="0" max="5"><br /><br /><br />
+      <input type = "submit" name="submit" value="Submit" />
+    </form>
+
+
+    <?php
+
+
+
 
    echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
    echo nl2br( "Director: " . $document["director"] . "\n" );
