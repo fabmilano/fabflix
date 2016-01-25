@@ -52,7 +52,7 @@ foreach ($cursor as $document) {
 
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo "Year: " . $document["year"];
-   echo '<hr>';
+   // echo '<hr>';
 
 }
 
