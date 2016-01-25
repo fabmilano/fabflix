@@ -1,3 +1,11 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="includes/style.css">
+</head>
+<body>
+
+
+
 <?php
 
 
@@ -33,3 +41,7 @@ if(mysql_num_rows($query_result)==0) {
     }
 }
 ?>
+
+
+</body>
+</html>
