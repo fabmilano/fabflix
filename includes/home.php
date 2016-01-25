@@ -59,8 +59,8 @@ foreach ($cursor as $document) {
 
      $mode = $_GET['mode'];
      $voted = $_GET['voted'];
-     //$id = $_GET['id'];
-     $id=$document["_id"];
+     $id = $_GET['id'];
+     //$id=$document["_id"];
 
 
 
