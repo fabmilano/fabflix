@@ -45,7 +45,6 @@ foreach ($cursor as $document) {
     $title =  $document["title"];
     $link = "rtmp://mymongotest.cloudapp.net:1935/vod2/" .  $document["rtmp"];
     $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
-    $rating = $document["rating"];
 
     
     ?><h3><?php echo $title;?></h3>
@@ -56,7 +55,6 @@ foreach ($cursor as $document) {
       </video>
     </div><?php
 
-   echo nl2br( "Rating: " .  $document["rating"]  .  "/5"  .  "\n" );
    echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo "Year: " . $document["year"];
