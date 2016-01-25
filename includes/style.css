@@ -15,19 +15,25 @@ h1 {
 	font-size:20px;
 	color:#f2a223;
 	font-weight:bold;
-}
-.msg {
-	overflow: hidden;
+	text-decoration: none;
 
+
+}
+.msg a:hover { text-decoration: underline}
+
+.msg {
+    overflow: hidden;
+    max-width: 645px;
 }
 .msg a{
 	font-size:15px;
 	color:#f2a223;
 	font-weight:bold;
 	float: right;
+	text-decoration: none;
 }
 
-
+.msg a:hover, .links a:hover { text-decoration: underline}
 h2 {
 	font-size:10px;
 	color:#f2a223;
