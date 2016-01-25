@@ -83,52 +83,12 @@ h1#logo a {
 	float:left;
 	width:239px;
 	height:49px;
-	background:url('images/logo.gif') no-repeat 0 0;
+	background:url('includes/images/logo.png') no-repeat 0 0;
 	font-size:0;
 	line-height:0;
 	text-indent:-4000px;
 }
-.social {
-	float:right;
-	width:160px;
-	padding-top:11px;
-}
-.social span {
-	float:left;
-	display:inline;
-	font-size:10px;
-	color:#9f9f9f;
-	line-height:16px;
-	padding-right:5px;
-}
-.social ul {
-	list-style:none;
-}
-.social ul li {
-	float:left;
-	display:inline;
-	width:16px;
-	padding-right:2px;
-}
-.social ul li a {
-	float:left;
-	display:inline;
-	width:16px;
-	height:16px;
-	background:url('images/social.gif') no-repeat 0 0;
-	font-size:0;
-	line-height:0;
-	text-indent:-4000px;
-}
-.social ul li a.facebook {
-	background-position:-18px 0;
-}
-.social ul li a.vimeo {
-	background-position:-36px 0;
-}
-.social ul li a.rss {
-	background-position:-54px 0;
-}
+
 #navigation {
 	float:right;
 	clear:right;
