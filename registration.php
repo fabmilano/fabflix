@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="includes/style.css">
 <title>Registration</title>
 <!-- <link rel="stylesheet" href="css/style.css" /> -->
 </head>
