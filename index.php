@@ -27,7 +27,7 @@ if(!isset($_SESSION['username'])) { //if not yet logged in
         <!-- <h1>FabFlix</h1> -->
 
         
-        <img src="includes/logo.png" alt="FabFlix" />
+        <img src="includes/images/logo.png" alt="FabFlix" />
         
 
         
