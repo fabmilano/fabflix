@@ -23,7 +23,7 @@ if(isset($_SESSION['email'])) { // if already login
 	<link rel="stylesheet" type="text/css" href="includes/style.css">
 	<title>Welcome, please Log In</title>
 </head>
-<body link="#f2a223">
+<body>
 <center>
 
 <h1>FabFlix Login</h1>
@@ -33,7 +33,7 @@ Password:&nbsp; <input type="password" name="password" /><br /><br /><br />
 <input type = "submit" name="submit" value="login" />
 </form>
 
-<p>Not registered yet? <a href='registration.php'>Register Here</a></p>
+<p>Not registered yet? <a href='registration.php'style="color: #f2a223">Register Here</a></p>
 
 </body>
 
