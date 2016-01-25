@@ -49,12 +49,10 @@ foreach ($cursor as $document) {
     $title =  $document["title"];
 
     //This calculates the sites ranking and then outputs it - rounded to 1 decimal
-    if($document['votes']){
+    
       $current = $document['tot'] / $document['votes'];
       echo "Current rating: " . round($current, 1) . "<br>";
-    }else{
-      echo "Current rating: undefined" . "<br>";
-    }
+    
 
 
      $mode = $_GET['mode'];
@@ -62,33 +60,6 @@ foreach ($cursor as $document) {
      $id = $_GET['id'];
      //$id=$document["_id"];
 
-
-
-
-      //We only run this code if the user has just clicked a voting link
-     if ( $mode=="vote") 
-     { 
-     
-     //If the user has already voted on the particular thing, we do not allow them to vote again  $cookie = "Mysite$id"; 
-      if(isset($_COOKIE[$cookie])) 
-        { 
-        Echo "Sorry You have already ranked that film <p>"; 
-        } 
-     
-     //Otherwise, we set a cooking telling us they have now voted 
-      else 
-        { 
-        $month = 2592000 + time(); 
-        setcookie(Mysite.$id, Voted, $month); 
-         //Then we update the voting information by adding 1 to the total votes and adding their vote (1,2,3,etc) to the total rating 
-
-        $document["votes"] = $document["votes"] + 1;
-        $document["tot"] = $document["tot"] + $voted;
-        $collection->save( $document );
-     // mysql_query ("UPDATE vote SET total = total+$voted, votes = votes+1 WHERE id = $id"); 
-        Echo "Your vote has been cast <p>"; 
-        } 
-     } 
     
 
 
