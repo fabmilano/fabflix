@@ -2,7 +2,7 @@
 
 <head>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+
 
     <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/4.11/video.js"></script>
