@@ -47,7 +47,7 @@ foreach ($cursor as $document) {
     $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
 
     
-    ?><h3><?php echo $title;?></h3>
+    ?><h2><?php echo $title;?></h2>
     <div id="instructions">
       <video class="video-js vjs-default-skin" width="640px" height="267px" 
       controls poster="<?php echo $image ?>" preload="none" data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
