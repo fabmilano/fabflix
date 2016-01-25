@@ -2,6 +2,14 @@
 
 <head>
 
+    body {
+          font-size:12px;
+          line-height:1.3;
+          font-family:Arial, Helvetica, Sans-Serif;
+          color:#ccc;
+          background:url('images/body-bg.gif');
+          }
+
 
 
     <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
