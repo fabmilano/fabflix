@@ -59,7 +59,8 @@ foreach ($cursor as $document) {
 
      $mode = $_GET['mode'];
      $voted = $_GET['voted'];
-     $id = $_GET['id'];
+     //$id = $_GET['id'];
+     $id=$document["_id"];
 
 
 
@@ -80,6 +81,10 @@ foreach ($cursor as $document) {
         $month = 2592000 + time(); 
         setcookie(Mysite.$id, Voted, $month); 
          //Then we update the voting information by adding 1 to the total votes and adding their vote (1,2,3,etc) to the total rating 
+
+        $document["votes"] = $document["votes"] + 1;
+        $document["tot"] = $document["tot"] + $voted;
+        $collection->save( $document );
      // mysql_query ("UPDATE vote SET total = total+$voted, votes = votes+1 WHERE id = $id"); 
         Echo "Your vote has been cast <p>"; 
         } 
@@ -89,11 +94,11 @@ foreach ($cursor as $document) {
 
       //This creates 5 links to vote a 1, 2, 3, 4, or 5 rating for each particular item 
      Echo "Rank the film: "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=1&id=".$document[_id].">Vote 1</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=2&id=".$document[_id].">Vote 2</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=3&id=".$document[_id].">Vote 3</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=4&id=".$document[_id].">Vote 4</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=5&id=".$document[_id].">Vote 5</a><p>"; 
+     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=1&id=".$document[_id].">*</a> | "; 
+     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=2&id=".$document[_id].">** 2</a> | "; 
+     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=3&id=".$document[_id].">*** 3</a> | "; 
+     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=4&id=".$document[_id].">**** 4</a> | "; 
+     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=5&id=".$document[_id].">***** 5</a><p>"; 
 
 
 
