@@ -23,7 +23,9 @@ if(isset($_SESSION['email'])) { // if already login
 	<link rel="stylesheet" type="text/css" href="includes/style.css">
 	<title>Welcome, please Log In</title>
 </head>
+<body>
 <center>
+
 <h1>FabFlix Login</h1>
 <form action = "login_proccess.php" method = "post">
 E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" /><br /><br />
@@ -34,5 +36,6 @@ Password:&nbsp; <input type="password" name="password" /><br /><br /><br />
 <p>Not registered yet? <a href='registration.php'>Register Here</a></p>
 
 </body>
+
 </center>
 </html>
