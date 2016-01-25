@@ -56,7 +56,7 @@ foreach ($cursor as $document) {
       </video>
     </div><?php
 
-   echo nl2br( "Genre: " .  $document["rating"]  .  "/5"  .  "\n" );
+   echo nl2br( "Rating: " .  $document["rating"]  .  "/5"  .  "\n" );
    echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo "Year: " . $document["year"];
