@@ -30,7 +30,7 @@ if(!isset($_SESSION['username'])) { //if not yet logged in
             <a href="logout.php">Logout</a>
         </div>
 
-
+        
 
         <hr>
 
