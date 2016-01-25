@@ -17,7 +17,7 @@
 
 <body>
 
-
+<centre>
 <?php
 
 
@@ -63,7 +63,7 @@ foreach ($cursor as $document) {
 }
 
 ?>
-
+</centre>
 </body>
 
 
