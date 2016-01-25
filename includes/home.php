@@ -94,11 +94,11 @@ foreach ($cursor as $document) {
 
       //This creates 5 links to vote a 1, 2, 3, 4, or 5 rating for each particular item 
      Echo "Rank the film: "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=1&id=".$document[_id].">*</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=2&id=".$document[_id].">** 2</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=3&id=".$document[_id].">*** 3</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=4&id=".$document[_id].">**** 4</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=5&id=".$document[_id].">***** 5</a><p>"; 
+     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=1&id=".$document[_id].">1</a> | "; 
+     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=2&id=".$document[_id].">2</a> | "; 
+     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=3&id=".$document[_id].">3</a> | "; 
+     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=4&id=".$document[_id].">4</a> | "; 
+     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=5&id=".$document[_id].">5</a><p>"; 
 
 
 
