@@ -8,7 +8,8 @@ body {
 }
 
 h1 {
-    background-color: white;
+	font-family:Arial, Helvetica, Sans-Serif;	
+    /*background-color: white;*/
 }
 
 .links a{
