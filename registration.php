@@ -42,13 +42,15 @@
 ?>
 <div class="form">
 <h1>Registration</h1>
-<form name="registration" action="" method="post">
-<input type="text" name="username" placeholder="Username" required />
-<input type="email" name="email" placeholder="E-mail" required />
-<input type="password" name="password" placeholder="Password" required />
-<input type="submit" name="submit" value="Register" />
-</form>
-</div>
+<center>
+	<form name="registration" action="" method="post">
+	<input type="text" name="username" placeholder="Username" required /><br /><br />
+	<input type="email" name="email" placeholder="E-mail" required /><br /><br />
+	<input type="password" name="password" placeholder="Password" required /><br /><br />
+	<input type="submit" name="submit" value="Register" />
+	</form>
+	</div>
+</center>
 <?php } ?>
 </body>
 </html>
