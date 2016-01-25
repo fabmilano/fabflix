@@ -10,7 +10,7 @@
     <script src="jquery-2.1.4.js"></script>
     <script src="getvideo.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="includes/style.css">
+    
 
 
 </head>
