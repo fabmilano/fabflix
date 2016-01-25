@@ -23,7 +23,7 @@ if(isset($_SESSION['email'])) { // if already login
 	<link rel="stylesheet" type="text/css" href="includes/style.css">
 	<title>Welcome, please Log In</title>
 </head>
-<body link=#f2a22">
+<body link="vivid orange">
 <center>
 
 <h1>FabFlix Login</h1>
