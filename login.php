@@ -21,7 +21,7 @@ if(isset($_SESSION['email'])) { // if already login
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="includes/style.css">
-	<title>Welcome, please Log In</title>
+	<title>Login</title>
 </head>
 <body>
 <center>
@@ -30,7 +30,7 @@ if(isset($_SESSION['email'])) { // if already login
 <form action = "login_proccess.php" method = "post">
 E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" /><br /><br />
 Password:&nbsp; <input type="password" name="password" /><br /><br /><br />
-<input type = "submit" name="submit" value="login" />
+<input type = "submit" name="submit" value="Login" />
 </form>
 
 <p>Not registered yet? <a href='registration.php'style="color: #f2a223">Register Here</a></p>
