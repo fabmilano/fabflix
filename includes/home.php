@@ -33,10 +33,6 @@ $collection = $db->videos;
 
 
 
-
-
-
-
 // find everything in the collection
 $cursor = $collection->find();
 
@@ -47,37 +43,6 @@ $cursor->sort(array('year' => 1, 'title' => 1));
 // iterate through the results
 foreach ($cursor as $document) {
     $title =  $document["title"];
-
-    //This calculates the sites ranking and then outputs it - rounded to 1 decimal
-    
-      $current = $document['tot'] / $document['votes'];
-      echo "Current rating: " . round($current, 1) . "<br>";
-    
-
-
-     $mode = $_GET['mode'];
-     $voted = $_GET['voted'];
-     $id = $_GET['id'];
-     //$id=$document["_id"];
-
-    
-
-
-      //This creates 5 links to vote a 1, 2, 3, 4, or 5 rating for each particular item 
-     Echo "Rank the film: "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=1&id=".$document[_id].">1</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=2&id=".$document[_id].">2</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=3&id=".$document[_id].">3</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=4&id=".$document[_id].">4</a> | "; 
-     Echo "<a href=".$_SERVER['PHP_SELF']."?mode=vote&voted=5&id=".$document[_id].">5</a><p>"; 
-
-
-
-
-
-
-
-
     $link = "rtmp://mymongotest.cloudapp.net:1935/vod2/" .  $document["rtmp"];
     $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
 
