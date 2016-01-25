@@ -15,7 +15,7 @@
 
 <body>
 
-It works like hell!
+CI test: It works like hell!
 <?php
 
 
