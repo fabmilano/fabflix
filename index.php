@@ -31,9 +31,10 @@ if(!isset($_SESSION['username'])) { //if not yet logged in
         
 
         
-
-        Welcome <?php echo $_SESSION['username']; ?>.
-        <a href="logout.php">Logout</a>
+        <div class="msg">
+            Welcome <?php echo $_SESSION['username']; ?>.
+            <a href="logout.php">Logout</a>
+        </div>
 
 
 

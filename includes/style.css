@@ -16,6 +16,16 @@ h1 {
 	color:#f2a223;
 	font-weight:bold;
 }
+.msg {
+	overflow: hidden;
+
+}
+.msg a{
+	font-size:15px;
+	color:#f2a223;
+	font-weight:bold;
+	float: right;
+}
 
 
 h2 {
