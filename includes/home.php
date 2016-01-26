@@ -72,7 +72,7 @@ foreach ($cursor as $document) {
     //$title =  $document["title"];
 
      //This outputs the sites name 
- Echo "Name: " .$documents['name']."<br>";
+ Echo "Name: " .$documents['title']."<br>";
  
  //This calculates the sites ranking and then outputs it - rounded to 1 decimal 
  $current = $documents["total"] / $documents["votes"]; 
