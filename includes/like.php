@@ -10,7 +10,7 @@
 	// select a collection (analogous to a relational database's table)
 	$collection = $db->videos;
 
-	$document = $collection->findOne((array('_id' => '$id')));      
+	$document = $collection->findOne(array('_id' => $id));      
 	
 	$document['like'] = $document['like'] + 1;
 	$collection->save( $document );
