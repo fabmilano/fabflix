@@ -16,7 +16,7 @@
 
     <script type="text/javascript">
       function like(value) {
-      $.post("like.php", {id:value});
+      $.post("includes/like.php", {id:value});
       location.reload();
       return false;
       }
@@ -30,9 +30,6 @@
 
 
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 
 
 // connect
