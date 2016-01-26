@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 	// connect
 	$m = new Mongo("db");
@@ -7,8 +9,7 @@
 	$db = $m->videos;
 
 	// select a collection (analogous to a relational database's table)
-	$collection = $db->videos;               //the name of my collection
-	
+	$collection = $db->videos;      
 	
 
 	$criteria = array("_id"=>$id);                   //find the document with the specific id
