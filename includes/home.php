@@ -11,6 +11,17 @@
     <script src="Base64.js"></script>
     <script src="jquery-2.1.4.js"></script>
     <script src="getvideo.js"></script>
+
+
+
+    <script type="text/javascript">
+      function like(value) {
+      $.post("like.php", {id:value});
+      location.reload();
+      return false;
+      }
+
+    </script>
   
 
 </head>
@@ -59,6 +70,16 @@ foreach ($cursor as $document) {
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo "Year: " . $document["year"];
    // echo '<hr>';
+
+
+
+   echo '<p>Likes: '.$document["likes"].'</p>';
+
+    echo '<p><input type="image" id="likebutton" name="likebutton" value="'.$document["_id"]. '" src="includes/images/likebutton.png" onclick="like(this.value)" /><hr>';
+
+  
+
+   }
 
 }
 
