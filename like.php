@@ -1,5 +1,5 @@
 <?php
-
+	$id = intval($_POST['id']);  
 
 	// connect
 	$m = new Mongo("db");
