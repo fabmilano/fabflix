@@ -68,14 +68,15 @@ foreach ($cursor as $document) {
    echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo "Year: " . $document["year"];
-   // echo '<hr>';
+   echo "Likes: " . $document["like"];
+   
+   echo '<p><input type="image" id="likebutton" name="likebutton" value="'.$document["_id"].
 
-   ?>
+        '" src="includes/images/likebutton.png" onclick="like(this.value)" /><hr>';
 
-   <p>Likes: <?php echo $document["like"] ?></p>
-   <p><input type="image" id="likebutton" name="likebutton" value="<?php $document['_id'] ?>" src="includes/images/likebutton.png" onclick="like(this.value)" /><hr>
+  
 
-   <?php
+   }
 
    }
 

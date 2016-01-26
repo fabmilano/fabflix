@@ -1,5 +1,5 @@
 <?php
-	$id = intval($_POST['id']);  
+	$id = intval($_POST['id']);  //retreiving the value sent by javascript
 
 	// connect
 	$m = new Mongo("db");
