@@ -8,8 +8,10 @@
 	$db = $m->videos;
 
 	// select a collection (analogous to a relational database's table)
-	$collection = $db->videos;      
+	$collection = $db->videos;
+
+	$document = $collection->findOne( array('_id' => '$id',  ); );      
 	
-	$collection['_id'] = $collection['_id'] + 1;
+	$document['like'] = $document['like'] + 1;
 	$collection->save( $document );
 ?>
