@@ -76,9 +76,7 @@ foreach ($cursor as $document) {
 
   
 
-   }
 
-   }
 
 }
 
