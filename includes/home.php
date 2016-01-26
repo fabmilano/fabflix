@@ -73,13 +73,12 @@ foreach ($cursor as $document) {
    echo "Year: " . $document["year"];
    // echo '<hr>';
 
+   ?>
 
+   <p>Likes: <?php echo $document["like"] ?></p>
+   <p><input type="image" id="likebutton" name="likebutton" value="<?php $document['_id'] ?>" src="includes/images/likebutton.png" onclick="like(this.value)" /><hr>
 
-   echo '<p>Likes: '.$document["likes"].'</p>';
-
-  echo '<p><input type="image" id="likebutton" name="likebutton" value="'.$document["_id"]. '" src="includes/images/likebutton.png" onclick="like(this.value)" /><hr>';
-
-  
+   <?php
 
    }
 
