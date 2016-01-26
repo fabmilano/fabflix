@@ -25,7 +25,7 @@ $query_result = mysql_query($test_query);
 //conditions
 if(mysql_num_rows($query_result)==0) {
 //if email entered not yet exists
-    echo "The email you entered is invalid.";
+    echo "The email you entered is invalid";
 }else {
 //if exists, then extract the password.
     while($row_query = mysql_fetch_array($query_result)) {
@@ -36,7 +36,7 @@ if(mysql_num_rows($query_result)==0) {
             header("Location: index.php");
             exit;
         } else{ // if not
-            echo "Invalid Password";
+            echo "Invalid password";
         }
     }
 }

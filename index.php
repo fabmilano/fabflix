@@ -26,7 +26,7 @@ if(!isset($_SESSION['username'])) { //if not yet logged in
         
         <div class="msg">
             <img src="includes/images/logo.png" alt="FabFlix" />
-            Welcome <?php echo $_SESSION['username']; ?>.
+            Welcome <?php echo $_SESSION['username']; ?>
             <a href="logout.php">Logout</a>
         </div>
 
