@@ -15,7 +15,7 @@
 
     <script type="text/javascript">
       function like(value) {
-          $.post("includes/like.php", {title:value});
+          $.post("includes/like.php", title);
           location.reload();
           return false;
       }
