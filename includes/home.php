@@ -16,7 +16,7 @@
 
     <script type="text/javascript">
       function like(value) {
-      $.post("includes/like.php");
+      $.post("includes/like.php", {id:value});
       location.reload();
       return false;
       }
@@ -56,7 +56,7 @@ foreach ($cursor as $document) {
     $link = "rtmp://mymongotest.cloudapp.net:1935/vod2/" .  $document["rtmp"];
     $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
     $id = $document["_id"];
-    
+    echo $id;
     ?><h3><?php echo $title;?></h3>
     <div id="instructions">
       <video class="video-js vjs-default-skin" width="640px" height="267px" 
