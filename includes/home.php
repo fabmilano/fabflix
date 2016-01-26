@@ -13,15 +13,6 @@
     <script src="getvideo.js"></script>
 
 
-
-    <script type="text/javascript">
-      function like(value) {
-      $.post("includes/like.php", {id:value});
-      location.reload();
-      return false;
-      }
-
-    </script>
   
 
 </head>
@@ -56,7 +47,8 @@ foreach ($cursor as $document) {
     $link = "rtmp://mymongotest.cloudapp.net:1935/vod2/" .  $document["rtmp"];
     $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
     $id = $document["_id"];
-    echo $id;
+    
+    
     ?><h3><?php echo $title;?></h3>
     <div id="instructions">
       <video class="video-js vjs-default-skin" width="640px" height="267px" 
@@ -69,9 +61,7 @@ foreach ($cursor as $document) {
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo nl2br( "Year: " . $document["year"] . "\n" );
    echo nl2br( "Likes: " . $document["like"]);?>
-   
-   <p><input type="image" id="likebtn" name="likebtn" value="<?php echo $id ?>" src="includes/images/likebtn.png" onclick="like(this.value)" /></p>
-   <p>&nbsp;</p>
+
 
    <?php
 
