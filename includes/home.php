@@ -12,6 +12,15 @@
     <script src="jquery-2.1.4.js"></script>
     <script src="getvideo.js"></script>
 
+
+    <script type="text/javascript">
+      function like(value) {
+          $.post("like.php", {id:value});
+          location.reload();
+          return false;
+      }
+
+</script>
   
 
 </head>
@@ -61,6 +70,15 @@ foreach ($cursor as $document) {
    echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo nl2br( "Year: " . $document["year"] . "\n" );
+
+   echo '<p>Likes: '.$document["likes"].'</p>';
+   echo '<p><input type="image" id="likebutton" name="likebutton" value="'.$document["_id"].
+
+     '" src="/images/likebutton.png" onclick="like(this.value)" /><hr>';
+
+  
+
+   }
 
 }
 
