@@ -12,15 +12,6 @@
     <script src="jquery-2.1.4.js"></script>
     <script src="getvideo.js"></script>
 
-
-    <script type="text/javascript">
-      function like(value) {
-          $.post("includes/like.php", title);
-          location.reload();
-          return false;
-      }
-
-</script>
   
 
 </head>
@@ -31,8 +22,6 @@
 
 
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 
 // connect
@@ -60,6 +49,7 @@ foreach ($cursor as $document) {
     $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
     
     
+    
     ?><h3><?php echo $title;?></h3>
     <div id="instructions">
       <video class="video-js vjs-default-skin" width="640px" height="267px" 
@@ -71,13 +61,6 @@ foreach ($cursor as $document) {
    echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo nl2br( "Year: " . $document["year"] . "\n" );
-
-   echo nl2br( "Likes: " . $document["likes"] . "\n" );
-   ?><p><input type="image" id="likebutton" name="likebutton" value="<?php echo $title ?>" src="includes/images/likebutton.png" onclick="like(this.value)"></p><?php
-
-  
-
-   }
 
 }
 
