@@ -9,7 +9,7 @@
 	// select a collection (analogous to a relational database's table)
 	$collection = $db->videos;               //the name of my collection
 	
-	$collection
+	
 
 	$criteria = array("_id"=>$id);                   //find the document with the specific id
 	$newdata = array('$inc'=>array("like"=>1));     //and increase the value of the "like" property by 1

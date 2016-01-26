@@ -75,7 +75,7 @@ foreach ($cursor as $document) {
 
    echo '<p>Likes: '.$document["likes"].'</p>';
 
-    echo '<p><input type="image" id="likebutton" name="likebutton" value="'.$document["_id"]. '" src="includes/images/likebutton.png" onclick="like(this.value)" /><hr>';
+  echo '<p><input type="image" id="likebutton" name="likebutton" value="'.$document["_id"]. '" src="includes/images/likebutton.png" onclick="like(this.value)" /><hr>';
 
   
 
