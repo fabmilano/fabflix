@@ -55,7 +55,7 @@ foreach ($cursor as $document) {
     $title =  $document["title"];
     $link = "rtmp://mymongotest.cloudapp.net:1935/vod2/" .  $document["rtmp"];
     $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
-
+    $id = $document["_id"];
     
     ?><h3><?php echo $title;?></h3>
     <div id="instructions">
@@ -70,7 +70,7 @@ foreach ($cursor as $document) {
    echo nl2br( "Year: " . $document["year"] . "\n" );
    echo nl2br( "Likes: " . $document["like"]);?>
    
-   <input type="image" id="likebtn" name="likebtn" value="<?php echo $document["_id"] ?>" src="includes/images/likebtn.png" onclick="like(this.value)" />
+   <p><input type="image" id="likebtn" name="likebtn" value="<?php echo $id ?>" src="includes/images/likebtn.png" onclick="like(this.value)" /></p>
    <p>&nbsp;</p>
 
    <?php
