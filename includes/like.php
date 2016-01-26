@@ -2,7 +2,7 @@
 
 	
 	
-	$id = intval($_POST['id']);                      //retreiving the value sent by javascript
+	$id = $_POST['id'];                      //retreiving the value sent by javascript
 	
 	$connection = new Mongo("db"); //connecting to the database
 	$db = $connection->videos;                    //the name of my database
