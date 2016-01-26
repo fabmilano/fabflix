@@ -1,8 +1,11 @@
 <?php
 
+	error_reporting(E_ALL);
+	ini_set('display_errors', 1);
+
 	
 	
-	$title = $_POST['title'];                      //retreiving the value sent by javascript
+	$title = $_POST["title"];                      //retreiving the value sent by javascript
 	
 	$connection = new Mongo("db"); //connecting to the database
 	$db = $connection->videos;                    //the name of my database

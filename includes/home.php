@@ -31,6 +31,8 @@
 
 
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 
 // connect
@@ -56,7 +58,6 @@ foreach ($cursor as $document) {
     $title =  $document["title"];
     $link = "rtmp://mymongotest.cloudapp.net:1935/vod2/" .  $document["rtmp"];
     $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
-    $id = $document["_id"];
     
     
     ?><h3><?php echo $title;?></h3>
