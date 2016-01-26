@@ -12,7 +12,6 @@
     <script src="jquery-2.1.4.js"></script>
     <script src="getvideo.js"></script>
 
-
   
 
 </head>
@@ -60,13 +59,7 @@ foreach ($cursor as $document) {
    echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo nl2br( "Year: " . $document["year"] . "\n" );
-   echo nl2br( "Likes: " . $document["like"]);?>
-
-
-   <?php
-
-  
-
+   echo nl2br( "Likes: " . $document["like"]);?><?php
 
 
 }
