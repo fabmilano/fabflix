@@ -14,7 +14,13 @@
 
     <script type="text/javascript">
       function like(title) {
-        $.post("includes/like.php", title);
+        $.ajax({
+          type: "POST",
+          url: "includes/like.php",
+          data: title,
+          success: success,
+          dataType: "text"
+        });
         location.reload();
         return false; 
       }
