@@ -14,16 +14,8 @@
 
     <script type="text/javascript">
       function like(value) {
-        // $.post("like.php", {title:value});
-        $.ajax({ url: 'like.php',
-          data: {'title' : value},
-          type: 'post',
-          dataType:'json',
-          success: function() {
-                  location.reload();
-              }
-          });
-        // location.reload();
+        $.post("like.php", {title:value});
+        location.reload();
         return false; 
       }
 
