@@ -1,7 +1,3 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-?>
 <html>
 
 <head>
@@ -23,7 +19,7 @@ ini_set('display_errors', 1);
         return false; 
       }
 
-</script>
+    </script>
 
   
 
@@ -35,7 +31,8 @@ THIS IS A TEST
 
 
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 // connect
 $m = new Mongo("db");
@@ -76,7 +73,7 @@ foreach ($cursor as $document) {
    echo nl2br( "Year: " . $document["year"] . "\n" );
    echo nl2br( "Likes: " . $document["likes"]"" );
 
-   ?><input type="image" id="likebutton" name="likebutton"  src="includes/images/likebutton.png" onclick="like('<?php echo $title ?>')" /><?php
+   ?><input type="image" id="likebutton" name="likebutton"  src="includes/images/likebutton.png" onclick="like(<?php echo $title ?>)" /><?php
 
 }
 
