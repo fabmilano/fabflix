@@ -15,6 +15,10 @@
     <script type="text/javascript">
       function like(value) {
         // $.post("like.php", {title:value});
+        $.ajax({ url: 'like.php',
+          data: {'title' : value},
+          type: 'post';
+          }
         location.reload();
         return false; 
       }
