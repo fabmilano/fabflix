@@ -15,7 +15,7 @@
 
     <script type="text/javascript">
       function like(value) {
-        $.post("like.php", {title:value});
+        $.post("http://mymongotest.cloudapp.net/fabflix/includes/like.php", {title:value});
         location.reload();
         return false; 
       }
