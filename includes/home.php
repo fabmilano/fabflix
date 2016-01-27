@@ -15,14 +15,14 @@
     <script type="text/javascript">
       function like(value) {
         // $.post("like.php", {title:value});
-        $.ajax({
-          type: 'POST',
-          url: 'like.php'
+        $.ajax({ url: 'like.php',
           data: {'title' : value},
-          success: function(output) {
-            location.reload();
-          });
-        
+          type: 'post',
+          dataType:'json',
+          success: function() {
+                  location.reload();;
+              }
+        // location.reload();
         return false; 
       }
 
