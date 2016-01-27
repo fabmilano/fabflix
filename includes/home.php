@@ -16,7 +16,7 @@
     <script type="text/javascript">
       function like(value) {
         $.post("http://mymongotest.cloudapp.net/fabflix/includes/like.php", {title:value});
-        location.reload();
+        setTimeout("location.reload(true);", 2);
         return false; 
       }
 
@@ -28,12 +28,7 @@
 
 <body>
 
-THIS IS A TEST
-
-
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 // connect
 $m = new Mongo("db");
