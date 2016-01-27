@@ -2,7 +2,7 @@
 	error_reporting(E_ALL);
 	ini_set('display_errors', 1);
 	
-	echo $_POST; 
+	print_r($_POST); 
 	// $title = $_POST['value'];                      //retreiving the value sent by javascript
 	
 	// $connection = new Mongo("db"); //connecting to the database
