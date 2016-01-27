@@ -16,7 +16,7 @@
     <script type="text/javascript">
       function like(value) {
         $.post("http://mymongotest.cloudapp.net/fabflix/includes/like.php", {title:value});
-        setTimeout("location.reload(true);", 2);
+        setTimeout("location.reload(true);", 1000);
         return false; 
       }
 
