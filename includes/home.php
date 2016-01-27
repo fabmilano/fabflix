@@ -22,6 +22,7 @@
           success: function() {
                   location.reload();
               }
+          });
         // location.reload();
         return false; 
       }
