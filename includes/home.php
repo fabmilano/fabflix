@@ -64,12 +64,13 @@ foreach ($cursor as $document) {
       </video>
     </div><?php
 
+   ?><input type="image" id="likebutton" name="likebutton" style="position: absolute; left:608px" value="<?php echo $title ?>" src="includes/images/likebutton.png" onclick="like(this.value)" /><?php
    echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo nl2br( "Year: " . $document["year"] . "\n" );
-   echo nl2br( "Likes: " . $document["likes"]);
+   echo nl2br( "Likes: " . $document["likes"] . "\n"  . "\n"  . "\n" );
 
-   ?><input type="image" id="likebutton" name="likebutton" style="position: absolute; left:608px" value="<?php echo $title ?>" src="includes/images/likebutton.png" onclick="like(this.value)" /><?php
+   
 
 }
 
