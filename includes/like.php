@@ -8,14 +8,13 @@
 	$connection = new Mongo("db"); //connecting to the database
 	$db = $connection->videos;                    //the name of my database
 	$collection = $db->videos;                       //the name of my collection
+	$product_array = array("title"=>$title);
+	$document = $collection->findOne( $product_array );
 	
-	$criteria = array("title"=>$title);                   //find the document with the specific id
-	$newdata = array('$inc'=>array("likes"=>1));     //and increase the value of the "like" property by 1
-	
-	$collection->update(
-	            $criteria,
-	            $newdata,
-	            array('multiple'=>true, 'safe'=>true)
-	          );
-	
+	// specify new values for likes
+	$document['likes'] = $document['likes'] + 1;
+
+
+	// save back to the database
+    $collection->save( $document );
 	?>
