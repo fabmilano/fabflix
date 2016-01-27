@@ -2,7 +2,7 @@
 
 	
 	
-	$title = strval($_POST['title']);                      //retreiving the value sent by javascript
+	$title = $_POST['title'];                      //retreiving the value sent by javascript
 	
 	$connection = new Mongo("db"); //connecting to the database
 	$db = $connection->CATALOGUE;                    //the name of my database
