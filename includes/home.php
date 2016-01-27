@@ -20,7 +20,7 @@
           type: 'post',
           dataType:'json',
           success: function() {
-                  location.reload();;
+                  location.reload();
               }
         // location.reload();
         return false; 
