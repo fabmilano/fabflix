@@ -13,14 +13,8 @@
     <script src="getvideo.js"></script>
 
     <script type="text/javascript">
-      function like(title) {
-        $.ajax({
-          type: "POST",
-          url: "includes/like.php",
-          data: title,
-          success: success,
-          dataType: "text"
-        });
+      function like(value) {
+        $.post("like.php", {title:value});
         location.reload();
         return false; 
       }
@@ -37,8 +31,7 @@ THIS IS A TEST
 
 
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+
 
 // connect
 $m = new Mongo("db");
@@ -77,17 +70,9 @@ foreach ($cursor as $document) {
    echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo nl2br( "Year: " . $document["year"] . "\n" );
-   echo nl2br( "Likes: " . $document["likes"] . "\n" );
+   echo nl2br( "Likes: " . $document["likes"]"" );
 
-   ?><p><input type="image" id="likebutton" name="likebutton" src="/images/likebutton.png" onclick="like('<?php echo $title ?>')"></p><hr><?php
-
-  
-
-   }
-
-  
-
-
+   ?><p><input type="image" id="likebutton" name="likebutton" value="<?php echo $title ?>" src="includes/images/likebutton.png" onclick="like(this.value)"></p><hr>;<?php
 
 }
 
