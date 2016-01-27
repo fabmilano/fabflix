@@ -14,7 +14,7 @@
 
     <script type="text/javascript">
       function like(value) {
-        $.post("includes/like.php", {title:value});
+        $.post("includes/like.php", {"title":value});
         location.reload();
         return false; 
       }
@@ -73,7 +73,7 @@ foreach ($cursor as $document) {
    echo nl2br( "Year: " . $document["year"] . "\n" );
    echo nl2br( "Likes: " . $document["likes"]"" );
 
-   echo '<input type="image" id="likebutton" name="likebutton" value="\'.$document["title"].\'" src="includes/images/likebutton.png" onclick="like(this.value)" />';
+   ?><input type="image" id="likebutton" name="likebutton" value="<?php echo $title ?>" src="includes/images/likebutton.png" onclick="like(this.value)" /><?php
 
 }
 
