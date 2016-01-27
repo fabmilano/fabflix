@@ -13,8 +13,8 @@
     <script src="getvideo.js"></script>
 
     <script type="text/javascript">
-      function like(value) {
-        $.post("includes/like.php", {"title":value});
+      function like() {
+        $.post("includes/like.php", {title:"The Ring"});
         location.reload();
         return false; 
       }
@@ -73,7 +73,7 @@ foreach ($cursor as $document) {
    echo nl2br( "Year: " . $document["year"] . "\n" );
    echo nl2br( "Likes: " . $document["likes"]"" );
 
-   ?><input type="image" id="likebutton" name="likebutton" value="<?php echo $title ?>" src="includes/images/likebutton.png" onclick="like(this.value)" /><?php
+   ?><input type="image" id="likebutton" name="likebutton" src="includes/images/likebutton.png" onclick="like()" /><?php
 
 }
 
