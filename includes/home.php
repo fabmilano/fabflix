@@ -69,7 +69,7 @@ foreach ($cursor as $document) {
    echo nl2br( "Year: " . $document["year"] . "\n" );
    echo nl2br( "Likes: " . $document["likes"]);
 
-   ?><input type="image" id="likebutton" name="likebutton" align="middle" value="<?php echo $title ?>" src="includes/images/likebutton.png" onclick="like(this.value)" /><?php
+   ?><input type="image" id="likebutton" name="likebutton" style="position: absolute; left:400px" value="<?php echo $title ?>" src="includes/images/likebutton.png" onclick="like(this.value)" /><?php
 
 }
 
