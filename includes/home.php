@@ -11,11 +11,10 @@
     <script src="Base64.js"></script>
     <script src="jquery-2.1.4.js"></script>
     <script src="getvideo.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <script type="text/javascript">
-      function like() {
-        $.post("includes/like.php", {title:"The Ring"});
+      function like(value) {
+        // $.post("includes/like.php", {title:value});
         location.reload();
         return false; 
       }
@@ -72,9 +71,9 @@ foreach ($cursor as $document) {
    echo nl2br( "Genre: " .  $document["genre"]  .  "\n" );
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo nl2br( "Year: " . $document["year"] . "\n" );
-   echo nl2br( "Likes: " . $document["likes"]);
+   echo nl2br( "Likes: " . $document["likes"] . "\n" );
 
-   ?><input type="image" id="likebutton" name="likebutton"  src="includes/images/likebutton.png" onclick="like()" /><?php
+   ?><input type="image" id="likebutton" name="likebutton" value="<?php echo $title ?>" src="includes/images/likebutton.png" onclick="like(this.value)" /><?php
 
 }
 
