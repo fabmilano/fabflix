@@ -42,6 +42,7 @@ foreach ($cursor as $document) {
     $title =  $document["title"];
     $link = "rtmp://mymongotest.cloudapp.net:1935/vod2/" .  $document["rtmp"];
     $image = "http://mymongotest.cloudapp.net:8080/" .  $document["pic"];
+    $plot = $document["plot"];
 
     
     ?><h3><?php echo $title;?></h3>
@@ -52,9 +53,10 @@ foreach ($cursor as $document) {
       </video>
     </div><?php
 
-   
+
    echo nl2br( "Director: " . $document["director"] . "\n" );
-   echo "Year: " . $document["year"];
+   echo "Year: " . $document["year"] . "\n" ;
+   echo nl2br( $document["plot"] . "\n"  . "\n"  . "\n" );
    // echo '<hr>';
 
 }
