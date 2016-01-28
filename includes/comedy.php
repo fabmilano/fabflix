@@ -63,8 +63,10 @@ foreach ($cursor as $document) {
     </div><?php
 
 
+   ?><input type="image" id="likebutton" name="likebutton" style="position: absolute; left:608px" value="<?php echo $title ?>" src="includes/images/likebutton.png" onclick="like(this.value)" /><?php
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo "Year: " . $document["year"] . "\n" ;
+   echo nl2br("\n" . "Likes: " . $document["likes"] . "\n" );
    ?><div style="font-style: italic; width:400px; overflow:auto;"> <?php echo "\n" . $document["plot"] . "\n"  . "\n"  . "\n"; ?> </div><?php
    // echo '<hr>';
 
