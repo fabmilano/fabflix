@@ -1,5 +1,5 @@
 <?php
-	$title = strval($_POST['title']);                      
+	$title = $_POST['title'];                      
 	$connection = new Mongo("db"); 
 	$db = $connection->videos;                   
 	$collection = $db->videos;                       
