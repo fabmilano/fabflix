@@ -54,7 +54,7 @@ foreach ($cursor as $document) {
 
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo "Year: " . $document["year"] . "\n" ;
-   echo nl2br(<div style="font-style: italic; width:200px; overflow:auto;"> $document["plot"] . "\n"  . "\n"  . "\n" </div>);
+   ?><div style="font-style: italic; width:200px; overflow:auto;"> <?php echo $document["plot"] . "\n"  . "\n"  . "\n"; ?> </div><?php
    // echo '<hr>';
 
 }
