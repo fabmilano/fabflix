@@ -7,8 +7,20 @@
     <script src="http://vjs.zencdn.net/4.11/video.js"></script>
 
     <script src="Base64.js"></script>
-    <script src="jquery-2.1.4.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="getvideo.js"></script>
+
+    <script type="text/javascript">
+      function like(value) {
+        $.post("http://mymongotest.cloudapp.net/fabflix/includes/like.php", {title:value});
+        setTimeout("location.reload(true);", 500);
+        return false; 
+      }
+
+    </script>
+
+  
 
 
 </head>
