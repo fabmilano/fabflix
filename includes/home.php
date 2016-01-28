@@ -46,7 +46,7 @@ $cursor = $collection->find();
 
 
 // Sort on date ascending and age descending
-$cursor->sort(array('likes' => 1, 'year' => -1));
+$cursor->sort(array('likes' => -1, 'year' => -1));
 
 // iterate through the results
 foreach ($cursor as $document) {
