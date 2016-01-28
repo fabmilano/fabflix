@@ -53,7 +53,7 @@ foreach ($cursor as $document) {
 
    echo nl2br( "Director: " . $document["director"] . "\n" );
    echo "Year: " . $document["year"] . "\n" ;
-   echo nl2br( $document["plot"] . "\n"  . "\n"  . "\n" );
+   echo nl2br( "\n" . $document["plot"] . "\n"  . "\n"  . "\n" );
    // echo '<hr>';
 
 }
