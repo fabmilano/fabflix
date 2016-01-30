@@ -1,6 +1,8 @@
 # fabflix
 A Netflix clone - http://mymongotest.cloudapp.net/fabflix/
+
 Final module project for "AC51041: DevOps and Microservices" / Data Engineering MSc @ U Dundee '15/'16
+
 
 For this project I worked on a Microsoft Azure Ubuntu VM and I split my services over five different Docker containers:
 - Nginx/RTMP for video streaming;
